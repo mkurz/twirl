@@ -40,7 +40,7 @@ lazy val parser = project
     .settings(
       name := "twirl-parser",
       libraryDependencies ++= scalaParserCombinators(scalaVersion.value),
-      libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % "test",
+      libraryDependencies += "com.github.sbt" % "junit-interface" % "0.13.3" % "test",
       libraryDependencies += "org.scalatest" %%% "scalatest" % scalatest % "test"
     )
 
